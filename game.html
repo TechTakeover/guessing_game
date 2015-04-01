@@ -1,7 +1,7 @@
 <script>
 
 (function() {
-  var answer = Math.random(Math.floor() *10);
+  var answer = Math.floor(Math.random() *10);
   var guess = prompt('What number am I thinking of?');
       guess = Number.parseInt(guess);
   var guesscounter = 0;
@@ -20,13 +20,14 @@
     } else if (isNaN(guess)){
       guess = Number.parseInt(prompt('You did not enter a number'));
 
+    } else if (guesscounter = 3) {
+      alert('You have run out of guesses, thanks for playing!');
     }
     guesscounter++;
+
   };
-    var RemainingGuesses = function()
-{
-  guesses: guesscounter - RemainingGuesses;
-};      alert('You have run out of guesses, thanks for playing!');
+
+
 
 })();
 </script>
