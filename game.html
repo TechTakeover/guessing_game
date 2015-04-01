@@ -1,37 +1,35 @@
 <script>
 
-(function() {
-  var answer = Math.floor(Math.random() *10);
-  var guess = prompt('What number am I thinking of?');
-  guess = Number.parseInt(guess);
-  var guesscounter = 0;
+  (function() {
+    var guess = prompt('What number am I thinking of?');
+    guess = Number.parseInt(guess);
 
-  var Guesses = {
-    this.guesscounter = guesscounter;
-    this.numberofguesses = numberofguesses;
-  }
+    var Guesses =  function(){
+      this.guesscounter = guesscounter;
+      guesscounter = 0;
+      this.answer = Math.floor(Math.random() *10);
+      this.addguess = function() {
+         guesscounter++;
+      }
+    }
 
-  //  while(guesscounter <=3){
+    var remainguess = new Guesses();
+    debugger;
 
-  //   if (guess === answer) {
-  //     alert('That\'s exactly what I\'m thinking! How did you know?');
-  //     break;
-  //   } else if (guess < answer) {
-  //     guess = Number.parseInt(prompt('That\'s not it, your number is too low, try again'));
-
-  //   } else if (guess > answer) {
-  //     guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
-  //   } else if (isNaN(guess)){
-  //     guess = Number.parseInt(prompt('You did not enter a number'));
-
-  //   } else if (guesscounter = 3) {
-  //     alert('You have run out of guesses, thanks for playing!');
-  //   }
-  //   guesscounter++;
-
-  // };
-
-
-
-})();
+    while(Guesses.addguess <=3){
+      if (guess === answer) {
+        alert('That\'s exactly what I\'m thinking! How did you know?');
+        break;
+      } else if (guess < answer) {
+          guess = Number.parseInt(prompt('That\'s not it, your number is too low, try again'));
+      } else if (guess > answer) {
+          guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
+      } else if (isNaN(guess)){
+          guess = Number.parseInt(prompt('You did not enter a number'));
+      } else if (guesscounter = 3) {
+          alert('You have run out of guesses, thanks for playing!');
+      }
+    // guesscounter++;
+    };
+  })();
 </script>
