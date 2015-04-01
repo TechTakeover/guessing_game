@@ -5,3 +5,5 @@ How to play:
 3. You will be told when you guess the correct number <br>
 4. You Have 5 guesses best to make them count! <br>
 5. Have fun and good luck :) <br>
+
+example
