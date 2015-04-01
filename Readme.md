@@ -6,4 +6,3 @@ How to play:
 4. You Have 5 guesses best to make them count! <br>
 5. Have fun and good luck :) <br>
 
-example
