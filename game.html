@@ -3,29 +3,33 @@
 (function() {
   var answer = Math.floor(Math.random() *10);
   var guess = prompt('What number am I thinking of?');
-      guess = Number.parseInt(guess);
+  guess = Number.parseInt(guess);
   var guesscounter = 0;
 
+  var Guesses = {
+    this.guesscounter = guesscounter;
+    this.numberofguesses = numberofguesses;
+  }
 
-   while(guesscounter <=3){
+  //  while(guesscounter <=3){
 
-    if (guess === answer) {
-      alert('That\'s exactly what I\'m thinking! How did you know?');
-      break;
-    } else if (guess < answer) {
-      guess = Number.parseInt(prompt('That\'s not it, your number is too low, try again'));
+  //   if (guess === answer) {
+  //     alert('That\'s exactly what I\'m thinking! How did you know?');
+  //     break;
+  //   } else if (guess < answer) {
+  //     guess = Number.parseInt(prompt('That\'s not it, your number is too low, try again'));
 
-    } else if (guess > answer) {
-      guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
-    } else if (isNaN(guess)){
-      guess = Number.parseInt(prompt('You did not enter a number'));
+  //   } else if (guess > answer) {
+  //     guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
+  //   } else if (isNaN(guess)){
+  //     guess = Number.parseInt(prompt('You did not enter a number'));
 
-    } else if (guesscounter = 3) {
-      alert('You have run out of guesses, thanks for playing!');
-    }
-    guesscounter++;
+  //   } else if (guesscounter = 3) {
+  //     alert('You have run out of guesses, thanks for playing!');
+  //   }
+  //   guesscounter++;
 
-  };
+  // };
 
 
 
