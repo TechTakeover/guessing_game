@@ -7,8 +7,7 @@
   var guesscounter = 0;
 
 
-   while//(guesscounter <=3)
-    (true){
+   while(guesscounter <=3){
 
     if (guess === answer) {
       alert('That\'s exactly what I\'m thinking! How did you know?');
@@ -23,7 +22,11 @@
 
     }
     guesscounter++;
-  }
-      alert('You have run out of guesses, thanks for playing!');
+  };
+    var RemainingGuesses = function()
+{
+  guesses: guesscounter - RemainingGuesses;
+};      alert('You have run out of guesses, thanks for playing!');
+
 })();
 </script>
