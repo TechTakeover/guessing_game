@@ -3,8 +3,13 @@
 (function() {
   var answer = 777;
   var guess = prompt('What number am I thinking of?');
-  guess = Number.parseInt(guess);
-  while (true) {
+      guess = Number.parseInt(guess);
+  var guesscounter = 0;
+      // for(var i = 0; i <=guesscounter; i++){
+      // guesscounter();}
+
+  while(guesscounter <=3) {
+
     if (guess === answer) {
       alert('That\'s exactly what I\'m thinking! How did you know?');
       break;
@@ -13,8 +18,12 @@
 
     } else if (guess > answer) {
       guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
-    }
+    } else if (isNaN(guess)){
+      guess = Number.parseInt(prompt('You did not enter a number'));
 
-}
+    }
+    guesscounter++;
+  }
+      alert('You have run out of guesses, thanks for playing!');
 })();
 </script>
