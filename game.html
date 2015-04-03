@@ -5,20 +5,20 @@
 
     var Guesses = function(guess){
       this.guesscounter = 0;
-      this.answer = Math.random(Math.floor() *10);
+      this.answer = Math.floor(Math.random() *10);
     }
 
     var remainguess = new Guesses();
 
-
+    // document.getElementById("game-content") {
     while(remainguess.guesscounter <= 3){
       if (guess === remainguess.answer) {
         alert('That\'s exactly what I\'m thinking! How did you know?');
         break;
       } else if (guess < remainguess.answer) {
-          guess = Number.parseInt(prompt('That\'s not it, your number is too low, try again'));
+          guess = Number.parseInt(prompt('That\'s not it, ' + guess + ' is too low, try again'));
       } else if (guess > remainguess.answer) {
-          guess = Number.parseInt(prompt('That\'s not the right number, your number is too high, guess again.'));
+          guess = Number.parseInt(prompt('That\'s not it number, ' + guess + ' is too high, guess again.'));
       } else if (isNaN(guess)){
           guess = Number.parseInt(prompt('You did not enter a number'));
       }
@@ -26,6 +26,7 @@
 
 
     };
+    // }
        if (remainguess.guesscounter > 3) {
           alert('You have run out of guesses, thanks for playing!');
       }
