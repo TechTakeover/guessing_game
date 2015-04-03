@@ -5,12 +5,12 @@
 
     var Guesses = function(guess){
       this.guesscounter = 0;
-      this.answer = Math.random(Math.floor() *10);
+      this.answer = Math.floor(Math.random() *10);
     }
 
     var remainguess = new Guesses();
 
-    document.getElementById("game-content") {
+    // document.getElementById("game-content") {
     while(remainguess.guesscounter <= 3){
       if (guess === remainguess.answer) {
         alert('That\'s exactly what I\'m thinking! How did you know?');
@@ -26,7 +26,7 @@
 
 
     };
-    }
+    // }
        if (remainguess.guesscounter > 3) {
           alert('You have run out of guesses, thanks for playing!');
       }
