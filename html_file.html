@@ -9,17 +9,18 @@
     <h1>Guess the number, win nothing!</h1>
   </header>
   <main id= "feedback">
-    <article id="prompt"></article>
-    <form name="guess form">
-      <label for="guess">Your Guess:</label>
-      <input type = "text" id="yourguess" name="submit" placeholder="enter your guess"></input>
-      <button type="submit" onclick = "checkanswer(); return false;">Submit</button>
-    </form>
-    <article id="response"></article>
-    <section id="guess"></section>
-    <article id ="guessesremain"></article>
-    <article id ="guesscounter"></article>
-    <section id ="counter"></section>
+    <article id="prompt">
+      <form name="guess form">
+        <label for="guess">Your Guess:</label>
+        <input type = "text" id="yourguess" name="submit" placeholder="enter your guess"></input>
+        <button type="submit" onclick = "checkanswer(); return false;">Submit</button>
+      </form>
+      <article id="response"></article>
+      <section id="guess"></section>
+      <article id ="guessesremain"></article>
+      <article id ="guesscounter"></article>
+      <section id ="counter"></section>
+    </article>
   </main>
   <aside>
     <ul>
@@ -33,9 +34,12 @@
     </ol>
     </ul>
   </aside>
-  <section><a href = "http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg" target="_blank"><img src="http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg"></a>
+  <section>
+    <a href = "http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg" target="_blank"><img src="http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg"></a>
   </section>
-  <footer>Colby Wilson 2015</footer>
+  <footer>
+    <p>Colby Wilson 2015</p>
+  </footer>
   <script src="game.js"></script>
 </body>
 </html>
