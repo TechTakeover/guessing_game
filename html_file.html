@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>What?</title>
+  <meta charset="UTF-8">
+  <title>What?</title>
 </head>
 <body>
   <header>
     <h1>Guess the number, win nothing!</h1>
   </header>
   <main id= "feedback">
-    <article id="prompt"></article>
-    <form name="guess form">
+    <section id="prompt"></section>
+    <form name="guess form" id="form_submit">
       <label for="guess">Your Guess:</label>
       <input type = "text" id="yourguess" name="submit" placeholder="enter your guess"></input>
-      <button type="submit" onclick = "checkanswer(); return false;">Submit</button>
+      <button type="submit">Submit</button>
     </form>
-    <article id="response"></article>
+    <section id="response"></section>
     <section id="guess"></section>
-    <article id ="guessesremain"></article>
-    <article id ="guesscounter"></article>
+    <section id ="guessesremain"></section>
+    <section id ="guesscounter"></section>
     <section id ="counter"></section>
   </main>
   <aside>
     <ul>
       <li>How to play:</li>
-    <ol>
-      <li>Enter Guess</li>
-      <li>Enter Name</li>
-      <li>Press submit</li>
-      <li>You have 5 guesses to get the correct answer</li>
-      <li>Good luck :) </li>
-    </ol>
+      <ol>
+        <li>Enter Guess</li>
+        <li>Enter Name</li>
+        <li>Press submit</li>
+        <li>You have 5 guesses to get the correct answer</li>
+        <li>Good luck :) </li>
+      </ol>
     </ul>
   </aside>
-  <section><a href = "http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg" target="_blank"><img src="http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg"></a>
+  <section>
+    <a href = "http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg" target="_blank"><img src="http://www.autoblog.nl/gallery/Lamborghini/Aventador_LP750_4_Super_Veloce/lamborghini-aventador-superveloce-06.jpg"></a>
   </section>
-  <footer>Colby Wilson 2015</footer>
+  <footer>
+    <p>Colby Wilson 2015</p>
+  </footer>
   <script src="game.js"></script>
 </body>
 </html>
